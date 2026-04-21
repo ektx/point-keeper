@@ -40,6 +40,7 @@ const handleFileChange = async (event: Event) => {
 };
 
 const handleEditSubmit = async (data: any) => {
+  if (loading.value) return;
   try {
     await addPoint(data);
   } catch (e) {
