@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import { Settings, Edit, History, Settings2, Download, Upload } from 'lucide-vue-next';
+import { Settings, Edit, History, Download, Upload } from 'lucide-vue-next';
 
 const emit = defineEmits<{
   (e: 'action', type: 'edit' | 'history' | 'backup' | 'restore'): void;
